@@ -1,6 +1,7 @@
 import React from "react";
 
-function Search({ handleSeach }) {
+function Search({ handleSearch }) {
+
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
@@ -8,7 +9,7 @@ function Search({ handleSeach }) {
         type="text"
         id="search"
         placeholder="Type a name to search..."
-        onChange={(e) => handleSeach(e)}
+        onChange={handleSearch}
       />
     </div>
   );

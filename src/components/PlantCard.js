@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 function PlantCard({ plant }) {
   const { name, image, price } = plant
-  const [inStock, setInStock] = useState(true)
+  const [inStock, setInstock] = useState(true)
 
   const handleClick = () => {
-    setInStock(prev => !prev)
+    setInstock(prev => !prev)
   }
 
 
